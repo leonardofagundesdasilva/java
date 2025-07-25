@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8e813e1-61fe-4eca-9339-2618e9741a47" name="Changes" comment="Starting from scratch">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tech/habegger/graphql/course/GraphQLRuntime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/habegger/graphql/course/GraphQLRuntime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tech/habegger/graphql/course/http/GraphQLHttpServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/habegger/graphql/course/http/GraphQLHttpServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/schema.graphqls" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/schema.graphqls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tech/habegger/graphql/course/GraphQLRuntimeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tech/habegger/graphql/course/GraphQLRuntimeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +22,7 @@
       <list>
         <option value="JUnit5 Test Class" />
         <option value="Record" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -36,6 +42,10 @@
     &quot;accountId&quot;: &quot;f703d2bf-fd70-44d4-8520-ed88f33bfd3f&quot;
   }
 }</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 6
@@ -48,30 +58,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.GraphQLHttpServer.executor": "Run",
-    "JUnit.GraphQLRuntimeTest.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.GraphQLHttpServer.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GraphQLRuntimeTest.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="tech.habegger.graphql.course.db" />
       <recent name="tech.habegger.graphql.course.http" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -80,8 +91,11 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="tech.habegger.graphql.course" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="tech.habegger.graphql.course.fetchers" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.GraphQLHttpServer">
     <configuration name="GraphQLHttpServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="tech.habegger.graphql.course.http.GraphQLHttpServer" />
       <module name="learning-graphql" />
@@ -95,9 +109,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GraphQLRuntimeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="learning-graphql" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tech.habegger.graphql.course.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tech.habegger.graphql.course" />
+      <option name="MAIN_CLASS_NAME" value="tech.habegger.graphql.course.GraphQLRuntimeTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.GraphQLHttpServer" />
+        <item itemvalue="JUnit.GraphQLRuntimeTest" />
       </list>
     </recent_temporary>
   </component>
@@ -121,7 +151,11 @@
       <workItem from="1750981257878" duration="16406000" />
       <workItem from="1751912714861" duration="658000" />
       <workItem from="1752515181338" duration="239000" />
-      <workItem from="1752606606222" duration="2518000" />
+      <workItem from="1752606606222" duration="4536000" />
+      <workItem from="1752692564717" duration="962000" />
+      <workItem from="1752693533584" duration="48000" />
+      <workItem from="1752693587903" duration="340000" />
+      <workItem from="1752693935618" duration="14145000" />
     </task>
     <task id="LOCAL-00001" summary="Starting from scratch">
       <option name="closed" value="true" />
@@ -146,7 +180,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/tech/habegger/graphql/course/GraphQLRuntimeTest.java</url>
-          <line>59</line>
+          <line>68</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>

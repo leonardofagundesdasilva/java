@@ -1,5 +1,24 @@
 type Query {
-    countries: [Country]
+    countries(criteria: CountryCriteria): [Country]
+}
+
+input IntRange {
+    above: Int
+    below: Int
+}
+
+input CountryCriteria {
+    continent: Continent
+    population: IntRange
+}
+
+enum Continent {
+    Europe
+    Asia
+    Australia
+    Africa
+    NorthAmerica
+    SouthAmerica
 }
 
 type Country {
